@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px / 16px = 62.5%; 1rem = 10px
+}
+
+body {
+  background-color: white;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+html,
+body,
+#root,
+.app {
+  min-height: 100vh;
+}
+
+.app {
+  background-color: $colorPrimary;
+  max-width: 192rem;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  grid-template-rows: min-content 1fr;
+
+  justify-items: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

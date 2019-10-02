@@ -1,0 +1,20 @@
+.chevLeft,
+.chevRight {
+  height: 10rem;
+  width: 10rem;
+  cursor: pointer;
+}
+
+.chevLeft {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.chevRight {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+.-disabled {
+  fill: gray;
+}

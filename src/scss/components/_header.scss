@@ -1,0 +1,40 @@
+.header {
+  grid-column: 1 / -1;
+  justify-self: stretch;
+
+  display: flex;
+  // justify-content: space-between;
+
+  font-size: 3.5rem;
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+
+    list-style: none;
+
+    .-active {
+      font-weight: bold;
+    }
+  }
+
+  &__item {
+    padding: 2rem;
+  }
+
+  &__logo {
+    padding: 2rem;
+    text-decoration: none;
+    margin-right: auto;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}
+
+.logo {
+  fill: black;
+  height: 7rem;
+  width: 7rem;
+}
