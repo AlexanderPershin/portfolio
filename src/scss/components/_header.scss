@@ -9,6 +9,8 @@
   align-items: center;
 
   .menu__btn {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
     width: 5rem;
     height: 5rem;
     fill: transparent;
@@ -22,7 +24,7 @@
     filter: url('#drop_shadow');
 
     &:hover {
-      fill: black;
+      fill: url('#crosshatch');
       transform: scaleY(1.1);
     }
     &:active {
@@ -34,6 +36,9 @@
   .menu__wrapper {
     justify-self: end;
     filter: drop-shadow(0 0 1px black);
+    transition: all $menuTimeout;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
   }
 
   &__menu {
@@ -44,11 +49,9 @@
 
     padding-left: 5rem;
 
-    animation: slideLeft 0.2s ease-out 0s 1;
-
     list-style: none;
 
-    transition: all 0.3s;
+    transition: all $menuTimeout;
     background: $colorPrimary;
     clip-path: polygon(100% 0%, 100% 100%, 10% 100%, 0% 50%, 10% 0%);
 
@@ -83,22 +86,28 @@
   filter: url('#drop_shadow');
 
   &:hover {
-    fill: black;
+    fill: url('#crosshatch');
     transform: scale(1.1);
   }
   &:active {
-    fill: rgba(black, 0.7);
+    fill: rgba(black, 1);
     transform: scaleX(0.9);
   }
 }
 
-@keyframes slideLeft {
-  0% {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
+.go-enter {
+  transform: translateX(100%);
+  opacity: 0;
+}
+.go-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+}
+.go-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+.go-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
 }

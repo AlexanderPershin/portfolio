@@ -11,11 +11,11 @@
   filter: url('#drop_shadow');
 
   &:hover {
-    fill: black;
+    fill: url('#crosshatch');
     transform: scaleY(1.1);
   }
   &:active {
-    fill: rgba(black, 0.7);
+    fill: rgba(black, 1);
     transform: scaleX(1.1);
   }
 }
