@@ -2,7 +2,22 @@
 .chevRight {
   height: 10rem;
   width: 10rem;
+  stroke: black;
+  stroke-width: $chevsStrokeWidth;
+  fill: transparent;
   cursor: pointer;
+  transition: all 0.3s;
+
+  filter: url('#drop_shadow');
+
+  &:hover {
+    fill: black;
+    transform: scaleY(1.1);
+  }
+  &:active {
+    fill: rgba(black, 0.7);
+    transform: scaleX(1.1);
+  }
 }
 
 .chevLeft {
@@ -13,8 +28,4 @@
 .chevRight {
   grid-column: 3 / 4;
   grid-row: 2 / 3;
-}
-
-.-disabled {
-  fill: gray;
 }

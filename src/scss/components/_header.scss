@@ -2,24 +2,63 @@
   grid-column: 1 / -1;
   justify-self: stretch;
 
-  display: flex;
-  // justify-content: space-between;
-
   font-size: 3.5rem;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  align-content: center;
+  align-items: center;
+
+  .menu__btn {
+    width: 5rem;
+    height: 5rem;
+    fill: transparent;
+    stroke: black;
+    align-self: center;
+    justify-self: end;
+    cursor: pointer;
+    margin-right: 5rem;
+    transition: all 0.2s;
+
+    filter: url('#drop_shadow');
+
+    &:hover {
+      fill: black;
+      transform: scaleY(1.1);
+    }
+    &:active {
+      fill: rgba(black, 0.7);
+      transform: scaleY(0.9);
+    }
+  }
+
+  .menu__wrapper {
+    justify-self: end;
+    filter: drop-shadow(0 0 1px black);
+  }
 
   &__menu {
     display: flex;
-    justify-content: space-between;
+
+    justify-self: end;
+    justify-content: flex-end;
+
+    padding-left: 5rem;
+
+    animation: slideLeft 0.2s ease-out 0s 1;
 
     list-style: none;
 
+    transition: all 0.3s;
+    background: $colorPrimary;
+    clip-path: polygon(100% 0%, 100% 100%, 10% 100%, 0% 50%, 10% 0%);
+
     .-active {
-      font-weight: bold;
+      text-decoration: underline;
     }
   }
 
   &__item {
-    padding: 2rem;
+    padding: 1rem;
   }
 
   &__logo {
@@ -34,7 +73,32 @@
 }
 
 .logo {
-  fill: black;
+  fill: transparent;
+  stroke: black;
+  stroke-width: $logoStrokeWidth;
   height: 7rem;
   width: 7rem;
+  transition: all 0.3s;
+
+  filter: url('#drop_shadow');
+
+  &:hover {
+    fill: black;
+    transform: scale(1.1);
+  }
+  &:active {
+    fill: rgba(black, 0.7);
+    transform: scaleX(0.9);
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
