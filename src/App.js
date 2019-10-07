@@ -9,6 +9,7 @@ import Main from './components/Main';
 import Skills from './components/Skills';
 import Work from './components/Work';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 import ChevLeft from './components/ChevLeft';
 import ChevRight from './components/ChevRight';
@@ -20,6 +21,36 @@ const App = props => {
 
   const location = props.location;
   const history = props.history;
+
+  const getNext = () => {
+    switch (location.pathname) {
+      case '/':
+        return 'contact';
+      case '/contact':
+        return 'skills';
+      case '/skills':
+        return 'work';
+      case '/work':
+        return 'main';
+      default:
+        return 'main';
+    }
+  };
+
+  const getPrevious = () => {
+    switch (location.pathname) {
+      case '/':
+        return 'work';
+      case '/work':
+        return 'skills';
+      case '/skills':
+        return 'contact';
+      case '/contact':
+        return 'main';
+      default:
+        return 'main';
+    }
+  };
 
   const handleNext = () => {
     setAnimDir('right');
@@ -66,8 +97,8 @@ const App = props => {
   return (
     <div className='app'>
       <Header />
-      <ChevLeft goTo={handlePrevious} />
-      <ChevRight goTo={handleNext} />
+      <ChevLeft goTo={handlePrevious} title={getPrevious()} />
+      <ChevRight goTo={handleNext} title={getNext()} />
 
       <SwitchTransition mode='out-in'>
         <FadeTransition
@@ -90,6 +121,8 @@ const App = props => {
           </Switch>
         </FadeTransition>
       </SwitchTransition>
+
+      <Footer />
     </div>
   );
 };

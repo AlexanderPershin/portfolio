@@ -9,23 +9,56 @@
   transition: all 0.3s;
 
   filter: url('#drop_shadow');
+}
+
+.chevLeft {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+
+  .chev__text {
+    font-size: 2rem;
+    font-weight: normal;
+    transform: rotate(90deg) translateX(65%);
+    transition: all 0.2s;
+    opacity: 0.5;
+  }
 
   &:hover {
-    fill: url('#crosshatch');
+    fill: url('#chev_left_pat');
     transform: scaleY(1.1);
+    .chev__text {
+      opacity: 1;
+    }
   }
+
   &:active {
     fill: rgba(black, 1);
     transform: scaleX(1.1);
   }
 }
 
-.chevLeft {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-}
-
 .chevRight {
   grid-column: 3 / 4;
   grid-row: 2 / 3;
+
+  .chev__text {
+    font-size: 2rem;
+    font-weight: normal;
+    transform: rotate(-90deg) translateX(-215%) translateY(-65%);
+    transition: all 0.2s;
+    opacity: 0.5;
+  }
+
+  &:hover {
+    fill: url('#chev_right_pat');
+    transform: scaleY(1.1);
+    .chev__text {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    fill: rgba(black, 1);
+    transform: scaleX(1.1);
+  }
 }

@@ -1,0 +1,13 @@
+.footer {
+  grid-column: 1 / -1;
+  justify-self: stretch;
+  align-self: stretch;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid darken($colorPrimary, 10%);
+  background-color: darken($colorPrimary, 5%);
+
+  font-size: 2.5rem;
+}

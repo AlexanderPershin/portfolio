@@ -1,0 +1,67 @@
+.accordeon {
+  &__item {
+    display: grid;
+    grid-template-columns: 1fr 20rem 1fr;
+    grid-template-rows: min-content 1fr;
+
+    .item__name {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+
+      font-size: 3rem;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        transform: scaleY(1.1);
+        .plusIcon > path,
+        .minusIcon > path {
+          fill: darkgrey;
+        }
+      }
+      &:active {
+        transform: scaleY(0.9);
+        .plusIcon > path,
+        .minusIcon > path {
+          fill: #000;
+        }
+      }
+
+      .plusIcon,
+      .minusIcon {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 2rem;
+      }
+    }
+    .item__desc {
+      grid-column: 1 / -1;
+      grid-row: 2 / 3;
+      transition: all 0.3s;
+      font-size: 2.5rem;
+    }
+  }
+  .item--active {
+    text-decoration: underline;
+    .minusIcon > path {
+      fill: #000;
+    }
+  }
+}
+
+.show_item-enter {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+.show_item-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.show_item-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+.show_item-exit-active {
+  opacity: 0;
+  transform: translateY(-100%);
+}

@@ -1,10 +1,31 @@
 import React from 'react';
 
-const AccordionItem = ({ label, body }) => {
+import { CSSTransition } from 'react-transition-group';
+
+import classNames from 'classnames';
+
+import Plus from './Plus';
+import Minus from './Minus';
+
+const AccordionItem = ({ label, body, opened, selectItem }) => {
+  const nameClassNames = classNames('item__name', {
+    'item--active': opened
+  });
+
   return (
     <div className='accordeon__item'>
-      <span className='accordeon__name'>{label}</span>
-      <p className='accordeon__desc'>{body}</p>
+      <span className={nameClassNames} onClick={() => selectItem(label)}>
+        {opened ? <Minus /> : <Plus />}
+        {label}
+      </span>
+      <CSSTransition
+        classNames='show_item'
+        in={opened}
+        unmountOnExit
+        timeout={200}
+      >
+        <p className='item__desc'>{body}</p>
+      </CSSTransition>
     </div>
   );
 };
