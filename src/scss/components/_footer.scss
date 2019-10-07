@@ -1,4 +1,6 @@
 .footer {
+  position: relative;
+  z-index: 50;
   grid-column: 1 / -1;
   justify-self: stretch;
   align-self: stretch;
@@ -10,4 +12,5 @@
   background-color: darken($colorPrimary, 5%);
 
   font-size: 2.5rem;
+  color: lighten(#000, 20%);
 }

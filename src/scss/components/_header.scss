@@ -1,8 +1,14 @@
 .header {
+  margin: 0;
   grid-column: 1 / -1;
   justify-self: stretch;
+  align-self: stretch;
 
   font-size: 3.5rem;
+  background-color: darken($colorPrimary, 5%);
+  color: lighten(#000, 20%);
+  border-bottom: 1px solid darken($colorPrimary, 10%);
+
   display: grid;
   grid-template-columns: min-content 1fr;
   align-content: center;
@@ -52,7 +58,7 @@
     list-style: none;
 
     transition: all $menuTimeout;
-    background: $colorPrimary;
+    background: darken($colorPrimary, 5%);
     clip-path: polygon(100% 0%, 100% 100%, 10% 100%, 0% 50%, 10% 0%);
 
     .-active {
@@ -66,9 +72,11 @@
   }
 
   &__logo {
-    padding: 2rem;
     text-decoration: none;
     margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__link {

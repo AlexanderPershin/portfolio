@@ -1,12 +1,16 @@
 .accordeon {
+  justify-self: stretch;
+  padding: 0 3rem;
   &__item {
     display: grid;
     grid-template-columns: 1fr 20rem 1fr;
     grid-template-rows: min-content 1fr;
+    justify-content: center;
 
     .item__name {
       grid-column: 2 / 3;
       grid-row: 1 / 2;
+      text-shadow: 0.5rem 0.5rem 1rem rgba(#000, 0.5);
 
       font-size: 3rem;
       cursor: pointer;
@@ -14,6 +18,10 @@
 
       &:hover {
         transform: scaleY(1.1);
+        .plusIcon,
+        .minusIcon {
+          transform: rotate(360deg);
+        }
         .plusIcon > path,
         .minusIcon > path {
           fill: darkgrey;
@@ -32,17 +40,32 @@
         width: 2rem;
         height: 2rem;
         margin-right: 2rem;
+        transition: all 0.2s;
       }
     }
     .item__desc {
       grid-column: 1 / -1;
       grid-row: 2 / 3;
-      transition: all 0.3s;
+      transition: all 0.2s;
       font-size: 2.5rem;
+      padding: 3rem;
+      background-color: darken($colorPrimary, 3%);
+      border-radius: 0 0 7px 7px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
+  .-activeItem {
+    background-color: darken($colorPrimary, 10%);
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0 1rem 1rem rgba(#000, 0.5);
+    position: relative;
+    z-index: 100;
+  }
   .item--active {
-    text-decoration: underline;
+    text-shadow: none;
     .minusIcon > path {
       fill: #000;
     }

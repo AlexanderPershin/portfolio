@@ -12,8 +12,12 @@ const AccordionItem = ({ label, body, opened, selectItem }) => {
     'item--active': opened
   });
 
+  const itemClassNames = classNames('accordeon__item', {
+    '-activeItem': opened
+  });
+
   return (
-    <div className='accordeon__item'>
+    <div className={itemClassNames}>
       <span className={nameClassNames} onClick={() => selectItem(label)}>
         {opened ? <Minus /> : <Plus />}
         {label}

@@ -1,16 +1,19 @@
 .skills {
+  height: 100%;
+
   grid-column: 2 / 3;
   justify-self: stretch;
+  align-self: center;
 
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 3fr;
 
-  justify-content: flex-start;
-  align-items: center;
-
-  // transition: all 1s;
+  justify-items: center;
 
   & > h1 {
+    align-self: end;
+
     display: flex;
     justify-content: center;
     align-items: center;
