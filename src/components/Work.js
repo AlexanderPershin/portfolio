@@ -58,7 +58,12 @@ const Work = () => {
           <figcaption className='work__caption'>{name}</figcaption>
         </figure>
         <p className='work__categories'>{renderCategories(categories)}</p>
-        <a href={link} target='_blank' className='work__view'>
+        <a
+          href={link}
+          target='_blank'
+          rel='noopener noreferrer'
+          className='work__view'
+        >
           view &rarr;
         </a>
       </div>

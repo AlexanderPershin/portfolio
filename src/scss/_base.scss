@@ -31,12 +31,13 @@ body,
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: min-content 1fr min-content;
+  grid-template-columns: 10rem 1fr 10rem;
   grid-template-rows: 10rem 1fr 10rem;
 
   justify-items: center;
   align-items: center;
 
+  position: relative;
   overflow-x: hidden;
 }
 

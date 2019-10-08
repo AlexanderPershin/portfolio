@@ -1,5 +1,6 @@
 .work {
   justify-self: stretch;
+  grid-column: 2 / 3;
   display: grid;
   grid-template-columns: 1fr;
   padding: 0 3rem;

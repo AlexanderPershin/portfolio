@@ -1,4 +1,6 @@
 .contact {
+  grid-column: 2 / 3;
+
   display: grid;
   grid-template-columns: 20rem 1fr;
   grid-template-rows: min-content repeat(4, min-content);
@@ -33,7 +35,7 @@
   &__item {
     font-size: 2.5rem;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 1rem;
+    padding: 1rem 4rem 1rem 1rem;
     outline: none;
     border: 1px solid transparent;
     border-bottom: 1px solid black;
@@ -60,8 +62,8 @@
       background: url('../../img/check.png');
       background-size: 2rem;
       background-repeat: no-repeat;
-      background-position: right top;
-      background-origin: content-box;
+      background-position: right 1rem top 1rem;
+      background-origin: padding-box;
     }
   }
   &__submit {

@@ -6,11 +6,31 @@
   align-self: stretch;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 5rem;
   border-top: 1px solid darken($colorPrimary, 10%);
   background-color: darken($colorPrimary, 5%);
 
   font-size: 2rem;
   color: lighten(#000, 20%);
+
+  &__socials {
+    display: flex;
+  }
+  &__social {
+    color: gray;
+    transition: all 0.2s;
+  }
+  &__social:hover {
+    color: black;
+    transform: scaleY(1.1) scaleX(0.9);
+  }
+  &__social:active {
+    color: darken(gray, 20%);
+    transform: scaleY(0.9) scaleX(1.1);
+  }
+  &__social:not(:last-child) {
+    margin-right: 1rem;
+  }
 }

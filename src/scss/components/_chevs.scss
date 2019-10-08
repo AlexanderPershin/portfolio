@@ -1,5 +1,9 @@
 .chevLeft,
 .chevRight {
+  position: fixed;
+  top: 45vh;
+
+  z-index: 1000;
   height: 10rem;
   width: 10rem;
   stroke: black;
@@ -14,6 +18,8 @@
 .chevLeft {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
+
+  left: 0;
 
   .chev__text {
     font-size: 2rem;
@@ -40,6 +46,8 @@
 .chevRight {
   grid-column: 3 / 4;
   grid-row: 2 / 3;
+
+  right: 0;
 
   .chev__text {
     font-size: 2rem;
