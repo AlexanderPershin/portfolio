@@ -41,7 +41,7 @@ const Contact = () => {
         type='message'
         className='contact__item'
         placeholder='Type your message here'
-        name='_replyto'
+        name='message'
         required
         id='message'
         rows='5'

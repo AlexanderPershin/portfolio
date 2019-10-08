@@ -2,8 +2,10 @@
   "name": "app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://alexanderpershin.github.io/portfolio",
   "dependencies": {
     "classnames": "^2.2.6",
+    "gh-pages": "^2.1.1",
     "node-sass": "^4.12.0",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
@@ -17,6 +19,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
