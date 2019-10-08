@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <form
       name='input'
-      action='https://formspree.io/alexanderpershinwebdeveloper@email.com'
+      action='https://formspree.io/xggkkywx'
       method='POST'
       className='contact'
     >
