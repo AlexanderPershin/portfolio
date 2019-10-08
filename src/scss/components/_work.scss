@@ -1,0 +1,71 @@
+.work {
+  justify-self: stretch;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0 3rem;
+
+  &__heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+  }
+  &__item {
+    border: 1px solid black;
+    border-radius: 7px;
+    box-shadow: 0 1rem 1rem rgba(#000, 0.5);
+    position: relative;
+    z-index: 100;
+  }
+  &__base {
+  }
+  &__image {
+    width: 100%;
+  }
+  &__caption {
+    font-size: 2.5rem;
+    background-color: darken($colorPrimary, 10%);
+    padding-left: 2rem;
+  }
+  &__categories {
+    padding: 1rem 2rem 0 2rem;
+    font-size: 1.5rem;
+  }
+  &__category {
+  }
+  &__category:not(:last-child) {
+    margin-right: 1rem;
+  }
+  &__view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    border: 1px solid black;
+    transition: all 0.2s;
+    &:link {
+      color: black;
+      background-color: rgba(black, 0.1);
+    }
+    &:visited {
+      color: gray;
+      background-color: rgba(black, 0.5);
+    }
+    &:hover {
+      color: lighten(black, 10%);
+      background-color: rgba(white, 0.5);
+      transform: scaleY(1.05) scaleX(0.95);
+    }
+    &:active {
+      color: lighten(black, 5%);
+      background-color: rgba(white, 0.9);
+      transform: scaleY(0.95) scaleX(1.05);
+    }
+  }
+}
