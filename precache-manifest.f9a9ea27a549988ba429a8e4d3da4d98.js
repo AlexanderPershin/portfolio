@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "889516c2b3a4850e4f8f992b69d84e4e",
+    "revision": "cb9919445ca94260269e93329b9d119b",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "1f9466396101da7c59a0",
-    "url": "/portfolio/static/css/main.25218415.chunk.css"
+    "revision": "6bfe1a88f1c575626d39",
+    "url": "/portfolio/static/css/main.1f1288b2.chunk.css"
   },
   {
     "revision": "1b1f84844c80c340d4f7",
     "url": "/portfolio/static/js/2.6eff601e.chunk.js"
   },
   {
-    "revision": "1f9466396101da7c59a0",
-    "url": "/portfolio/static/js/main.71c5aff9.chunk.js"
+    "revision": "6bfe1a88f1c575626d39",
+    "url": "/portfolio/static/js/main.f7c113ed.chunk.js"
   },
   {
     "revision": "ce083fbeab51ff3c6d59",
@@ -30,5 +30,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "768e7fe13b34faca9c70807ecd320d65",
     "url": "/portfolio/static/media/gripper_calculator.768e7fe1.jpg"
+  },
+  {
+    "revision": "498f5053b968f00f2b1919224ccea4fc",
+    "url": "/portfolio/static/media/lightpaperfibers.498f5053.png"
   }
 ]);
