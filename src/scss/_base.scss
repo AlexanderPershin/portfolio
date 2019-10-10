@@ -39,6 +39,7 @@ body,
 
 .app {
   background-color: $colorPrimary;
+  background-image: $appBg;
   max-width: 192rem;
   margin: 0 auto;
 
@@ -59,6 +60,7 @@ a {
 }
 
 .splitted {
+  cursor: move;
   position: relative;
   z-index: 1000;
 }

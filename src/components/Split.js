@@ -18,7 +18,10 @@ export default class Split extends Component {
           damping: 10 - charInWordIndex * 1
         })
       },
-      exit: { opacity: 0, delay: ({ charIndex }) => charIndex * 50 },
+      exit: {
+        opacity: 0,
+        delay: ({ charIndex }) => charIndex * 50
+      },
       drag: {
         y: 0,
         transition: ({ charInWordIndex }) => ({
@@ -37,10 +40,12 @@ export default class Split extends Component {
       },
       hoverable: true,
       init: {
-        scale: 1
+        scale: 1,
+        textShadow: '10px 10px 10px rgba(0, 0, 0, 0.25)'
       },
       hover: {
-        scale: 1.2
+        scale: 1.2,
+        textShadow: '10px 10px 10px rgba(0, 0, 0, 0.3)'
       }
     };
 
@@ -54,7 +59,6 @@ export default class Split extends Component {
         pose={this.state.isVisible ? 'enter' : 'exit'}
         charPoses={charPoses}
         wordPoses={wordPoses}
-        title='drag'
       >
         {this.props.children}
       </SplitText>

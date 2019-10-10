@@ -10,7 +10,7 @@
   align-items: center;
   padding: 0 5rem;
   border-top: 1px solid darken($colorPrimary, 10%);
-  background-color: darken($colorPrimary, 5%);
+  background-color: $footerHeaderBg;
 
   font-size: 2rem;
   color: lighten(#000, 20%);

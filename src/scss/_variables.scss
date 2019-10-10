@@ -4,6 +4,10 @@ $logoStrokeWidth: 1px;
 $chevsStrokeWidth: 1px;
 $menuTimeout: 0.3s;
 
+// bg
+$footerHeaderBg: rgba(darken($colorPrimary, 5%), 0.5);
+$appBg: url('../img/lightpaperfibers.png');
+
 // media queries breakpoints
 $bp-big: 50em; // 800px / 16px
 $bp-medium: 37.5em; // 600px / 16px
