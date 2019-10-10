@@ -7,7 +7,10 @@
 
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 2fr 3fr;
+  grid-template-rows: calc(40vh - 10rem) 1fr;
+
+  padding: 2rem;
+  row-gap: 2rem;
 
   justify-items: center;
 

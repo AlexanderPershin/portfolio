@@ -2,6 +2,8 @@ import React from 'react';
 
 import Accordeon from './Accordeon';
 
+import Split from './Split';
+
 const skillsList = [
   {
     label: 'Html/CSS',
@@ -22,7 +24,9 @@ const skillsList = [
 const Skills = () => {
   return (
     <div className='skills'>
-      <h1 className='heading1'>My skills:</h1>
+      <h1 className='heading1'>
+        <Split>My skills:</Split>
+      </h1>
       <Accordeon list={skillsList} />
     </div>
   );

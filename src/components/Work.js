@@ -1,43 +1,22 @@
 import React from 'react';
 
-import examplePic from '../img/check_big.png';
+import Split from './Split';
+
+import configurator from '../img/works/configurator.jpg';
+import gripper_calculator from '../img/works/gripper_calculator.jpg';
 
 const workList = [
   {
-    name: 'Example',
-    link: 'http://google.com',
-    picture: examplePic,
-    categories: ['demo', 'javascript', 'react']
+    name: 'configurator',
+    link: 'https://young-beach-95006.herokuapp.com/',
+    picture: configurator,
+    categories: ['javascript', 'react', 'html/css']
   },
   {
-    name: 'Example1',
-    link: 'http://google.com',
-    picture: examplePic,
-    categories: ['demo', 'javascript', 'react']
-  },
-  {
-    name: 'Example2',
-    link: 'http://google.com',
-    picture: examplePic,
-    categories: ['demo', 'javascript', 'react']
-  },
-  {
-    name: 'Example3',
-    link: 'http://google.com',
-    picture: examplePic,
-    categories: ['demo', 'javascript', 'react']
-  },
-  {
-    name: 'Example4',
-    link: 'http://google.com',
-    picture: examplePic,
-    categories: ['demo', 'javascript', 'react']
-  },
-  {
-    name: 'Example5',
-    link: 'http://google.com',
-    picture: examplePic,
-    categories: ['demo', 'javascript', 'react']
+    name: 'gripper calculator',
+    link: 'https://alexanderpershin.github.io/gripper/',
+    picture: gripper_calculator,
+    categories: ['demo', 'javascript', 'react', 'html/css', 'design']
   }
 ];
 
@@ -72,7 +51,9 @@ const Work = () => {
 
   return (
     <div className='work'>
-      <h1 className='heading1 work__heading'>My works</h1>
+      <h1 className='heading1 work__heading'>
+        <Split>My works</Split>
+      </h1>
       <section className='work__content'>{renderList()}</section>
     </div>
   );

@@ -12,6 +12,18 @@ html {
   font-size: 62.5%; // 10px / 16px = 62.5%; 1rem = 10px
 }
 
+@media only screen and (max-width: $bp-big) {
+  html {
+    font-size: 50%; // 8px / 16px
+  }
+}
+
+@media only screen and (max-width: $bp-medium) {
+  html {
+    font-size: 44%; // ~ 7px / 16px
+  }
+}
+
 body {
   background-color: white;
   font-weight: 300;
@@ -44,6 +56,11 @@ body,
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.splitted {
+  position: relative;
+  z-index: 1000;
 }
 
 // right-to-left

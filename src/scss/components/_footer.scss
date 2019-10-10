@@ -24,7 +24,7 @@
   }
   &__social:hover {
     color: black;
-    transform: scaleY(1.1) scaleX(0.9);
+    transform: scale(1.1);
   }
   &__social:active {
     color: darken(gray, 20%);

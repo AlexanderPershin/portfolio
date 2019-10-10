@@ -77,6 +77,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 2rem;
   }
 
   &__link {
@@ -119,4 +120,11 @@
 .go-exit-active {
   opacity: 0;
   transform: translateX(100%);
+}
+
+// 400px/16px = 25em
+@media only screen and (max-width: 25em) {
+  .logo {
+    display: none;
+  }
 }

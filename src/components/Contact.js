@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Split from './Split';
+
 const Contact = () => {
   return (
     <form
@@ -8,7 +10,9 @@ const Contact = () => {
       method='POST'
       className='contact'
     >
-      <h1 className='heading1 contact__heading'>Contact me</h1>
+      <h1 className='heading1 contact__heading'>
+        <Split>Contact me</Split>
+      </h1>
 
       <label htmlFor='name' className='contact__label'>
         Name
@@ -17,7 +21,7 @@ const Contact = () => {
         id='name'
         type='text'
         className='contact__item'
-        placeholder='Enter your name here'
+        placeholder='Your name'
         name='Name'
         required
       />
@@ -40,7 +44,7 @@ const Contact = () => {
       <textarea
         type='message'
         className='contact__item'
-        placeholder='Type your message here'
+        placeholder='Your message'
         name='message'
         required
         id='message'

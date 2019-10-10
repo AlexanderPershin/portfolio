@@ -4,7 +4,6 @@
   display: grid;
   grid-template-columns: 20rem 1fr;
   grid-template-rows: min-content repeat(4, min-content);
-  margin: 2rem 0;
 
   padding: 2rem;
   row-gap: 2rem;
@@ -12,9 +11,11 @@
 
   &:valid {
     background-image: linear-gradient(
-        to bottom right,
-        rgba(241, 241, 241, 0.8),
-        rgba(187, 187, 187, 0.9)
+        45deg,
+        rgba(black, 0.3) 0%,
+        rgba(black, 0.3) 10%,
+        rgba(white, 0.6) 10%,
+        rgba(white, 0.6) 100%
       ),
       url('../../img/check_big.png');
     background-size: contain;
@@ -32,6 +33,7 @@
     font-size: 3rem;
     cursor: pointer;
   }
+
   &__item {
     font-size: 2.5rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -50,6 +52,7 @@
       transform-origin: center left;
       color: lighten(black, 45%);
       transition: all 0.3s;
+      visibility: hidden;
     }
 
     &:hover::placeholder {
@@ -66,6 +69,7 @@
       background-origin: padding-box;
     }
   }
+
   &__submit {
     font-size: 2.5rem;
     font-family: $fontMain;
@@ -88,10 +92,39 @@
       box-shadow: 0 0.5rem 0.5rem rgba(#000, 0.5);
     }
   }
+  &:valid &__submit {
+    animation: attract 0.3s ease-in-out 0s 2;
+  }
   textarea.contact__item {
     font-size: 2.5rem;
   }
   textarea::placeholder {
     font-size: 2.5rem;
+  }
+
+  @keyframes attract {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  // 560px/16 = 35em
+
+  @media only screen and (max-width: 35em) {
+    &__label {
+      display: none;
+    }
+    &__item {
+      grid-column: 1 / -1;
+      &::placeholder {
+        visibility: visible;
+      }
+    }
   }
 }
