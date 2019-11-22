@@ -4,8 +4,15 @@ import Split from './Split';
 
 import configurator from '../img/works/configurator.jpg';
 import gripper_calculator from '../img/works/gripper_calculator.jpg';
+import garden_shop from '../img/works/garden_shop.jpg';
 
 const workList = [
+  {
+    name: 'garden shop',
+    link: 'https://alexanderpershin.github.io/garden_shop/',
+    picture: garden_shop,
+    categories: ['react-spring', 'react', 'html/css']
+  },
   {
     name: 'configurator',
     link: 'https://young-beach-95006.herokuapp.com/',
