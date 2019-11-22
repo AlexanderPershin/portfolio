@@ -1,18 +1,19 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.1f1288b2.chunk.css",
-    "main.js": "/portfolio/static/js/main.3b927e68.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.3b927e68.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.a992a06b.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.a992a06b.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.50c01cf9.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.50c01cf9.js.map",
-    "static/js/2.5ce4d192.chunk.js": "/portfolio/static/js/2.5ce4d192.chunk.js",
-    "static/js/2.5ce4d192.chunk.js.map": "/portfolio/static/js/2.5ce4d192.chunk.js.map",
+    "static/js/2.0b7caa4e.chunk.js": "/portfolio/static/js/2.0b7caa4e.chunk.js",
+    "static/js/2.0b7caa4e.chunk.js.map": "/portfolio/static/js/2.0b7caa4e.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.1b4bce9f6989675cfbb54ba29cb0fb9a.js": "/portfolio/precache-manifest.1b4bce9f6989675cfbb54ba29cb0fb9a.js",
+    "precache-manifest.834e4370d3f11f0eb2a26d9a57332893.js": "/portfolio/precache-manifest.834e4370d3f11f0eb2a26d9a57332893.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.1f1288b2.chunk.css.map": "/portfolio/static/css/main.1f1288b2.chunk.css.map",
     "static/media/style.scss": "/portfolio/static/media/lightpaperfibers.498f5053.png",
     "static/media/configurator.jpg": "/portfolio/static/media/configurator.0ad3159a.jpg",
+    "static/media/garden_shop.jpg": "/portfolio/static/media/garden_shop.a8932cfe.jpg",
     "static/media/gripper_calculator.jpg": "/portfolio/static/media/gripper_calculator.768e7fe1.jpg"
   }
 }
