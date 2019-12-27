@@ -5,8 +5,15 @@ import Split from './Split';
 import configurator from '../img/works/configurator.jpg';
 import gripper_calculator from '../img/works/gripper_calculator.jpg';
 import garden_shop from '../img/works/garden_shop.jpg';
+import news_portal from '../img/works/news_portal.jpg';
 
 const workList = [
+  {
+    name: 'news portal',
+    link: 'https://limitless-sierra-27830.herokuapp.com/',
+    picture: news_portal,
+    categories: ['mern', 'fullstack', 'react', 'express']
+  },
   {
     name: 'garden shop',
     link: 'https://alexanderpershin.github.io/garden_shop/',
