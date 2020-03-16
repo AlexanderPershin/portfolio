@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.1f1288b2.chunk.css",
-    "main.js": "/portfolio/static/js/main.65690169.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.65690169.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.79022953.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.79022953.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.50c01cf9.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.50c01cf9.js.map",
-    "static/js/2.a552d96c.chunk.js": "/portfolio/static/js/2.a552d96c.chunk.js",
-    "static/js/2.a552d96c.chunk.js.map": "/portfolio/static/js/2.a552d96c.chunk.js.map",
+    "static/js/2.4b98d643.chunk.js": "/portfolio/static/js/2.4b98d643.chunk.js",
+    "static/js/2.4b98d643.chunk.js.map": "/portfolio/static/js/2.4b98d643.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.24152222e4502542552bab95ecb79343.js": "/portfolio/precache-manifest.24152222e4502542552bab95ecb79343.js",
+    "precache-manifest.56428606e5733614ea965124d56081ac.js": "/portfolio/precache-manifest.56428606e5733614ea965124d56081ac.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.1f1288b2.chunk.css.map": "/portfolio/static/css/main.1f1288b2.chunk.css.map",
     "static/media/style.scss": "/portfolio/static/media/lightpaperfibers.498f5053.png",
     "static/media/configurator.jpg": "/portfolio/static/media/configurator.0ad3159a.jpg",
     "static/media/garden_shop.jpg": "/portfolio/static/media/garden_shop.a8932cfe.jpg",
     "static/media/gripper_calculator.jpg": "/portfolio/static/media/gripper_calculator.768e7fe1.jpg",
-    "static/media/news_portal.jpg": "/portfolio/static/media/news_portal.4a527936.jpg"
+    "static/media/news_portal.jpg": "/portfolio/static/media/news_portal.4a527936.jpg",
+    "static/media/simple_next.jpg": "/portfolio/static/media/simple_next.df7b8507.jpg"
   }
 }

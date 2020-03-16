@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a9acd32efa88ebb79cc4546e19082ace",
+    "revision": "2eb290ac528b92e090106e3810af9251",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "fddf7274a7af4248cc83",
+    "revision": "d623c9cb559d8b6e6147",
     "url": "/portfolio/static/css/main.1f1288b2.chunk.css"
   },
   {
-    "revision": "38bea3b8f3be77f53bbd",
-    "url": "/portfolio/static/js/2.a552d96c.chunk.js"
+    "revision": "eaed5cc7768a529b5fe8",
+    "url": "/portfolio/static/js/2.4b98d643.chunk.js"
   },
   {
-    "revision": "fddf7274a7af4248cc83",
-    "url": "/portfolio/static/js/main.65690169.chunk.js"
+    "revision": "d623c9cb559d8b6e6147",
+    "url": "/portfolio/static/js/main.79022953.chunk.js"
   },
   {
     "revision": "ce083fbeab51ff3c6d59",
@@ -42,5 +42,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4a527936c31f38826cfd6cfea39fff33",
     "url": "/portfolio/static/media/news_portal.4a527936.jpg"
+  },
+  {
+    "revision": "df7b850776c560afeaa08850584a7ddc",
+    "url": "/portfolio/static/media/simple_next.df7b8507.jpg"
   }
 ]);
