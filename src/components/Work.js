@@ -6,8 +6,15 @@ import configurator from '../img/works/configurator.jpg';
 import gripper_calculator from '../img/works/gripper_calculator.jpg';
 import garden_shop from '../img/works/garden_shop.jpg';
 import news_portal from '../img/works/news_portal.jpg';
+import simple_next from '../img/works/simple_next.jpg';
 
 const workList = [
+  {
+    name: 'next.js app',
+    link: 'https://simple-next.now.sh/',
+    picture: simple_next,
+    categories: ['next.js', 'material-ui', 'react']
+  },
   {
     name: 'news portal',
     link: 'https://limitless-sierra-27830.herokuapp.com/',
