@@ -7,6 +7,7 @@ import gripper_calculator from '../img/works/gripper_calculator.jpg';
 import garden_shop from '../img/works/garden_shop.jpg';
 import news_portal from '../img/works/news_portal.jpg';
 import simple_next from '../img/works/simple_next.jpg';
+import themed_spa from '../img/works/themed-spa.png';
 
 const workList = [
   {
@@ -14,6 +15,12 @@ const workList = [
     link: 'https://simple-next.now.sh/',
     picture: simple_next,
     categories: ['next.js', 'material-ui', 'react']
+  },
+  {
+    name: 'spa react',
+    link: 'https://alexanderpershin.github.io/themed-spa',
+    picture: themed_spa,
+    categories: ['styled-components', 'react-spring', 'react']
   },
   {
     name: 'news portal',
