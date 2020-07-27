@@ -1,22 +1,30 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1f1288b2.chunk.css",
-    "main.js": "/portfolio/static/js/main.31136eb2.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.31136eb2.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.50c01cf9.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.50c01cf9.js.map",
-    "static/js/2.84e0e5ea.chunk.js": "/portfolio/static/js/2.84e0e5ea.chunk.js",
-    "static/js/2.84e0e5ea.chunk.js.map": "/portfolio/static/js/2.84e0e5ea.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.683ed68c.chunk.css",
+    "main.js": "/portfolio/static/js/main.f0152902.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.f0152902.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.cd1dc1f4.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.cd1dc1f4.js.map",
+    "static/js/2.de042ae7.chunk.js": "/portfolio/static/js/2.de042ae7.chunk.js",
+    "static/js/2.de042ae7.chunk.js.map": "/portfolio/static/js/2.de042ae7.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.16523ee2d121dfee49da4098155e3397.js": "/portfolio/precache-manifest.16523ee2d121dfee49da4098155e3397.js",
+    "precache-manifest.1d7da7c8e453ddc9a21c900ba4eec882.js": "/portfolio/precache-manifest.1d7da7c8e453ddc9a21c900ba4eec882.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.1f1288b2.chunk.css.map": "/portfolio/static/css/main.1f1288b2.chunk.css.map",
+    "static/css/main.683ed68c.chunk.css.map": "/portfolio/static/css/main.683ed68c.chunk.css.map",
+    "static/js/2.de042ae7.chunk.js.LICENSE.txt": "/portfolio/static/js/2.de042ae7.chunk.js.LICENSE.txt",
     "static/media/style.scss": "/portfolio/static/media/lightpaperfibers.498f5053.png",
     "static/media/configurator.jpg": "/portfolio/static/media/configurator.0ad3159a.jpg",
     "static/media/garden_shop.jpg": "/portfolio/static/media/garden_shop.a8932cfe.jpg",
     "static/media/gripper_calculator.jpg": "/portfolio/static/media/gripper_calculator.768e7fe1.jpg",
+    "static/media/lsdeer.jpg": "/portfolio/static/media/lsdeer.cbcb7a3c.jpg",
     "static/media/news_portal.jpg": "/portfolio/static/media/news_portal.4a527936.jpg",
     "static/media/simple_next.jpg": "/portfolio/static/media/simple_next.df7b8507.jpg",
     "static/media/themed-spa.png": "/portfolio/static/media/themed-spa.60c79714.png"
-  }
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cd1dc1f4.js",
+    "static/js/2.de042ae7.chunk.js",
+    "static/css/main.683ed68c.chunk.css",
+    "static/js/main.f0152902.chunk.js"
+  ]
 }
