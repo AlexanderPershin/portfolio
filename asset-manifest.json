@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.683ed68c.chunk.css",
-    "main.js": "/portfolio/static/js/main.f0152902.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.f0152902.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.5bd12334.chunk.css",
+    "main.js": "/portfolio/static/js/main.e5e554af.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.e5e554af.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.cd1dc1f4.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.cd1dc1f4.js.map",
-    "static/js/2.de042ae7.chunk.js": "/portfolio/static/js/2.de042ae7.chunk.js",
-    "static/js/2.de042ae7.chunk.js.map": "/portfolio/static/js/2.de042ae7.chunk.js.map",
+    "static/js/2.6358fddb.chunk.js": "/portfolio/static/js/2.6358fddb.chunk.js",
+    "static/js/2.6358fddb.chunk.js.map": "/portfolio/static/js/2.6358fddb.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.1d7da7c8e453ddc9a21c900ba4eec882.js": "/portfolio/precache-manifest.1d7da7c8e453ddc9a21c900ba4eec882.js",
+    "precache-manifest.7124055e67e0ac2d238b90dddef45c0a.js": "/portfolio/precache-manifest.7124055e67e0ac2d238b90dddef45c0a.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.683ed68c.chunk.css.map": "/portfolio/static/css/main.683ed68c.chunk.css.map",
-    "static/js/2.de042ae7.chunk.js.LICENSE.txt": "/portfolio/static/js/2.de042ae7.chunk.js.LICENSE.txt",
+    "static/css/main.5bd12334.chunk.css.map": "/portfolio/static/css/main.5bd12334.chunk.css.map",
+    "static/js/2.6358fddb.chunk.js.LICENSE.txt": "/portfolio/static/js/2.6358fddb.chunk.js.LICENSE.txt",
     "static/media/style.scss": "/portfolio/static/media/lightpaperfibers.498f5053.png",
     "static/media/configurator.jpg": "/portfolio/static/media/configurator.0ad3159a.jpg",
+    "static/media/django_todo.png": "/portfolio/static/media/django_todo.7c5dde2e.png",
     "static/media/garden_shop.jpg": "/portfolio/static/media/garden_shop.a8932cfe.jpg",
     "static/media/gripper_calculator.jpg": "/portfolio/static/media/gripper_calculator.768e7fe1.jpg",
     "static/media/lsdeer.jpg": "/portfolio/static/media/lsdeer.cbcb7a3c.jpg",
@@ -23,8 +24,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.cd1dc1f4.js",
-    "static/js/2.de042ae7.chunk.js",
-    "static/css/main.683ed68c.chunk.css",
-    "static/js/main.f0152902.chunk.js"
+    "static/js/2.6358fddb.chunk.js",
+    "static/css/main.5bd12334.chunk.css",
+    "static/js/main.e5e554af.chunk.js"
   ]
 }
