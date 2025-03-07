@@ -2,11 +2,6 @@ import React from "react";
 
 const socialList = [
     {
-        name: "facebook",
-        icon: "fab fa-facebook-f",
-        link: "https://web.facebook.com/alexander.pershin.125",
-    },
-    {
         name: "vk",
         icon: "fab fa-vk",
         link: "https://vk.com/id409604155",
